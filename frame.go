@@ -1,0 +1,12 @@
+package main
+
+type FrameOrderMode int
+
+const (
+	FrameOrderModePassThrough FrameOrderMode = iota
+	FrameOrderModeMultiTrackAV
+	FrameOrderModeMultiTrackAVCompareDtsOneMsCompensate
+	FrameOrderModeMultiTrackAVComparePtsOnMsCompensate
+	FrameOrderModeMultiTrackAVCompareDtsOneMsCompensateEofr
+	FrameOrderModeMultiTrackAvComparePtsOneMsCompensateEofr
+)
